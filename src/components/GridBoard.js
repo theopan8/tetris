@@ -10,7 +10,6 @@ export default function GridBoard(props) {
             grid[row].push(<GridSquare key={`${col}${row}`} color="1" />)
         }
     }
-
     return (
         <div className='grid-board'>
             {grid}
