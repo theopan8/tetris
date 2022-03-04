@@ -4,9 +4,9 @@ import GridSquare from './GridSquare'
 
 export default function GridBoard(props) {
     const grid = []
-    for (let row = 0; row < 18; row ++) {
+    for (let row = 0; row < 18; row++) {
         grid.push([])
-        for (let col = 0; col < 10; col ++) {
+        for (let col = 0; col < 10; col++) {
             grid[row].push(<GridSquare key={`${col}${row}`} color="1" />)
         }
     }
