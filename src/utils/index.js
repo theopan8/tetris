@@ -1,18 +1,18 @@
 export const random = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 export const gridDefault = () => {
-    const rows = 18
-    const cols = 10
-    const array = []
+    const rows = 18;
+    const cols = 10;
+    const array = [];
     for (let row = 0; row < rows; row++) {
-        array.push([])
+        array.push([]);
         for (let col = 0; col < cols; col++) {
-            array[row].push(0)
+            array[row].push(0);
         }
     }
-    return array
+    return array;
 }
 
 export const shapes = [
@@ -126,7 +126,7 @@ export const shapes = [
 ]
 
 export const randomShape = () => {
-    return random(1, shapes.length - 1)
+    return random(1, shapes.length - 1);
 }
 
 export const defaultState = () => {

@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { moveDown, moveLeft, moveRight, rotate } from '../actions'
 
 export default function Controls(props) {
-    const dispatch = useDispatch()
-    const isRunning = useSelector((state) => state.isRunning)
+    const dispatch = useDispatch();
+    const isRunning = useSelector((state) => state.isRunning);
     return (
         <div className="controls">
             {/* left */}
@@ -28,5 +28,5 @@ export default function Controls(props) {
             }}>Down</button>
 
         </div>
-    )
+    );
 }

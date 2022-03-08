@@ -10,5 +10,5 @@ export default function ScoreBoard(props) {
             <button className="score-board-button" onClick={(e) => {
             }}>Restart</button>
         </div>
-    )
+    );
 }
