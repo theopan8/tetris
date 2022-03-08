@@ -15,12 +15,16 @@ const gameReducer = (state = defaultState(), action) => {
             return state;
 
         case MOVE_RIGHT:
-  
-            return state
+            if (canMoveTo(shape, grid, x - 1, y, rotation)) {
+                return { ...state, x: x - 1 };
+            }
+            return state;
   
         case MOVE_LEFT:
-  
-            return state
+            if (canMoveTo(shape, grid, x + 1, y, rotation)) {
+                return { ...state, x: x + 1 };
+            }
+            return state;
   
         case MOVE_DOWN:
   
